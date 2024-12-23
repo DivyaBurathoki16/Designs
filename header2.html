@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADER2</title>
+    <link rel="stylesheet" href="header2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>LOGO</h1>
+        </div>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">HELP</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">SETTINGS</a></li>
+        </ul>
+        <div class="menu-icon">
+            <span class="material-symbols-outlined" onclick="toggleSidebar()" >
+                menu
+            </span>
+        </div>
+    </nav>
+     <div class="sidebar">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">HELP</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">SETTINGS</a></li>
+        </ul>
+     </div>
+   <script>
+      
+
+    const sidebar = document.querySelector('.sidebar');
+
+    
+    function toggleSidebar() {
+        
+        if (sidebar.style.display === 'none' || !sidebar.style.display) {
+           
+            sidebar.style.display = 'flex';
+        } else {
+            
+            sidebar.style.display = 'none';
+        }
+    }
+      
+   </script>
+</body>
+</html>
