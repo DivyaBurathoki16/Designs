@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADER</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="header1.css">
+</head>  
+<body>
+    <nav>
+        <div class="Logo">
+            <h1>LOGO</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="menu-icon">
+            <span class="material-symbols-outlined" onclick="toggleMenu()">
+                menu
+            </span>
+        </div>
+    </nav>
+    <script>
+        let menusList = document.getElementById("menuList")
+        menusList.style.maxHeight ="0px";
+
+        function toggleMenu(){
+            if(menusList.style.maxHeight=== "0px"){
+                menusList.style.maxHeight= "300px";
+            }
+            else{
+                menusList.style.maxHeight= "0px";
+            }
+
+        }
+    </script>
+</body>
+</html>
